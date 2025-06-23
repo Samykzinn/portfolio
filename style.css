@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
+
+:root {
+    --azul-claro: #5EDFFF;
+    --azul-neon: #00FFFF;
+    --fundo-escuro: #0A0F1E;
+    --texto-primario: #B0DAFF;
+}
+
+body {
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: var(--fundo-escuro);
+    color: var(--texto-primario);
+    position: relative;
+    z-index: 1;
+    margin: 0;
+}
+
+.background-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://img.freepik.com/vetores-premium/pc-de-montagem-hardware-de-computador-pessoal_169241-892.jpg') no-repeat center center / cover;
+    filter: blur(10px);
+    z-index: 0;
+}
+
+header, main, footer {
+    position: relative;
+    z-index: 2;
+}
+
+h1, h2, h5 {
+    color: var(--azul-neon);
+}
+
+.lead, .btn-link, a {
+    color: var(--azul-claro);
+}
+
+a:hover {
+    color: var(--azul-neon);
+    text-decoration: underline;
+}
+
+.badge {
+    background-color: var(--azul-claro);
+    color: #000;
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--azul-neon);
+    color: var(--texto-primario);
+    box-shadow: 0 0 10px var(--azul-neon);
+}
+
+.project-card {
+    min-height: 200px;
+}
